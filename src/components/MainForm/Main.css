@@ -1,0 +1,578 @@
+.main-form {
+    padding-top: 100px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    margin-left: 200px;
+    padding: 20px;
+}
+
+
+.images {
+    position: relative;
+    width: fit-content;
+    width: 44%;
+}
+
+.images .front-img {
+    margin-bottom: 30px;
+    width: 60%;
+}
+
+.images .back-img {
+    margin-left: 80px;
+    width: 60%;
+}
+
+.card-number-front {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    letter-spacing: 3px;
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.name-date-front {
+    position: absolute;
+    top: 135px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.name-date-front p {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: gainsboro;
+}
+
+.name-date-front h2 {
+    color: gainsboro;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.back-img {
+    position: relative;
+    width: 70%;
+    margin-left: 80px;
+}
+
+.back-cvc-div {
+    position: absolute;
+    top: 76%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-cvc {
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+
+.card-logo {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 10%;
+}
+
+.main-right-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-name,
+.number,
+.m,
+.cvc-text {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+}
+
+.input-name,
+.input-number-name {
+    margin-bottom: 4px;
+    width: 300px;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 6px;
+    border-radius: 7px;
+    height: 40px;
+}
+
+.input-name::placeholder,
+.input-number-name::placeholder {
+    color: rgb(165, 162, 162);
+    padding: 5px;
+}
+
+
+.date-cvc {
+    display: flex;
+    gap: 20px;
+}
+
+
+.month-input,
+.year-input {
+    width: 60px;
+    height: 35px;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 6px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+}
+
+.month-input {
+    margin-right: 10px;
+}
+
+.cvc-input {
+    width: 144px;
+    height: 35px;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 6px;
+    border-radius: 7px;
+}
+
+.button-confirm button {
+    width: 300px;
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+/* Remove arrow spinner for Chrome, Safari, Edge, and Opera */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove arrow spinner for Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.success-container img {
+    width: 100px;
+}
+
+.success-container h2 {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.success-container p {
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(161, 159, 157);
+}
+
+.success-container button {
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    width: 120%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.success-section {
+    display: none;
+    /* Initially hidden */
+}
+
+.main-right-form {
+    display: block;
+}
+
+.show-success .success-section {
+    display: block;
+    /* Show the success section when form is submitted */
+}
+
+.show-success .main-right-form {
+    display: none;
+    /* Hide the form when success section is shown */
+}
+
+/* Responsive */
+
+/* laptop  */
+@media (max-width:1024px) {
+    .main-container {
+        /* gap: 50px; */
+    }
+
+    .card-logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 10%;
+    }
+
+    .back-cvc-div {
+        position: absolute;
+        top: 76%;
+        left: 72%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .back-cvc {
+        font-weight: 400;
+        font-size: 15px;
+        color: white;
+    }
+
+    .card-number-front {
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        letter-spacing: 0px;
+        color: white;
+        font-weight: 400;
+        font-size: 17px;
+    }
+
+    .name-date-front {
+        position: absolute;
+        top: 80px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .name-date-front p {
+        font-size: 13px;
+        font-weight: 200;
+        line-height: 2;
+        letter-spacing: 1px;
+        color: gainsboro;
+    }
+
+    .name-date-front h2 {
+        color: gainsboro;
+        font-weight: 200;
+        font-size: 12px;
+    }
+
+    .success-section {
+        padding: 30px;
+    }
+
+    .success-container p {
+        font-size: 25px;
+        font-weight: 400;
+        color: rgb(161, 159, 157);
+    }
+}
+
+/* Tablet */
+@media (max-width:768px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        gap: 0px;
+        padding: 0;
+    }
+
+    .main-right-form {
+        margin-top: 30px;
+    }
+
+    .images {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .images .front-img {
+        margin-top: 70px;
+        width: 70%;
+        margin-left: 30px;
+        z-index: 1;
+    }
+
+    .images .back-img {
+        margin-left: 90px;
+        width: 70%;
+        position: absolute;
+        top: 5px;
+    }
+
+    .card-logo {
+        position: absolute;
+        top: 80px;
+        left: 40px;
+        width: 10%;
+        z-index: 1;
+    }
+
+    .main-form {
+        padding-top: 10px;
+    }
+
+    .name-number {
+        margin-top: 20px;
+    }
+
+    .back-img {
+        position: relative;
+        width: 80%;
+        margin-left: 80px;
+    }
+
+    .back-cvc-div {
+        position: absolute;
+        top: 29%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .back-cvc {
+        font-weight: 300;
+        font-size: 16px;
+        color: white;
+    }
+
+    .card-number-front {
+        position: absolute;
+        top: 130px;
+        left: 40px;
+        letter-spacing: 1px;
+        color: white;
+        font-weight: 400;
+        font-size: 17px;
+        z-index: 1;
+    }
+
+    .name-date-front {
+        position: absolute;
+        top: 160px;
+        left: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        z-index: 1;
+    }
+
+    .name-date-front p {
+        font-size: 13px;
+        font-weight: 200;
+        line-height: 2;
+        letter-spacing: 1px;
+        color: gainsboro;
+    }
+
+    .name-date-front h2 {
+        color: gainsboro;
+        font-weight: 200;
+        font-size: 12px;
+    }
+
+    .success-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 60px;
+    }
+
+    .success-container button {
+        border: none;
+        color: white;
+        background-color: black;
+        padding: 15px;
+        width: 120%;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .success-section {
+        padding: 0px;
+    }
+
+}
+
+/* Mobile large */
+@media (max-width: 460px) {
+    .main-container {
+        gap: 0px;
+    }
+
+    .main-right-form {
+        margin-top: 0px;
+    }
+
+    .images {
+        margin-top: 75px;
+        margin-right: 50px;
+    }
+
+    .images .back-img {
+        margin-left: 35px;
+        width: 150%;
+        position: absolute;
+        top: -24px;
+    }
+
+    .images .front-img {
+        margin-top: 60px;
+        width: 150%;
+        margin-left: -30px;
+        z-index: 1;
+        margin-bottom: 0px;
+    }
+
+    .year-input {
+        margin-bottom: 15px;
+    }
+
+    .month-input {
+        margin-bottom: 15px;
+    }
+
+    .card-logo {
+        position: absolute;
+        top: 75px;
+        left: -10px;
+        width: 25%;
+        z-index: 1;
+    }
+
+    .name-number {
+        margin-top: 0;
+    }
+
+    .main-form {
+        padding: 0;
+    }
+
+    .button-confirm button {
+        margin-top: 10px;
+    }
+
+    .p-name {
+        margin-top: 15px;
+    }
+
+    .back-img {
+        position: relative;
+        width: 80%;
+        margin-left: 80px;
+    }
+
+    .back-cvc-div {
+        position: absolute;
+        top: 24%;
+        left: 144%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .back-cvc {
+        font-weight: 300;
+        font-size: 16px;
+        color: white;
+    }
+
+    .card-number-front {
+        position: absolute;
+        top: 130px;
+        left: -10px;
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+        width: 140%;
+    }
+
+    .name-date-front {
+        position: absolute;
+        top: 170px;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 70px;
+        width: 125%;
+    }
+
+    .name-date-front p {
+        font-size: 13px;
+        font-weight: 200;
+        line-height: 2;
+        letter-spacing: 1px;
+        color: gainsboro;
+    }
+
+    .name-date-front h2 {
+        color: gainsboro;
+        font-weight: 200;
+        font-size: 12px;
+    }
+
+    .success-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+}
